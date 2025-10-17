@@ -1,61 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home — CSS-Styled Version</title>
-  <meta name="description" content="Home page for the CSS-styled version of my World Wide Web research project.">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="HTML-only and CSS-styled versions" />
+  <title>Web Project</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">⌂</span>
+        <span class="brand-text">Web Project</span>
+      </a>
 
-<header class="site-header">
-  <div class="header-inner">
-    <h1 class="header-title">CSS-Styled Version</h1>
+  <nav class="primary-nav" aria-label="Primary">
+  <a class="nav-link is-active" href="index.html">Home</a>
 
-    <nav class="header-nav">
-      <a href="../index.html" class="nav-btn">Home</a>
-    </nav>
-  </div>
-</header>
+  <details class="nav-dropdown">
+    <summary class="nav-link">About me</summary>
+    <ul class="dropdown">
+      <a class="dropdown-link" >CV</a>
+      <a class="dropdown-link" >Schedule</a>
+    </ul>
+  </details>
 
 
-<main class="container">
-  <section class="intro">
-    <h2>Welcome to the CSS-Styled Research Site</h2>
-    <p>This section applies modern, responsive CSS to my researches.</p>
+
+<a class="nav-link" href="css/references.html">References</a>
+
+</nav>
+</nav>
+
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1 class="hero-title">Welcome to my website</h1>
+      <p class="hero-subtitle"> This website showcases a variety of projects where my web development skills have grown throughout the process.</p>
+      
+    </div>
   </section>
 
-  <ul class="topic-list">
-    <li>
-      <a href="wwwresearch.html">
-        <span class="topic-icon">🌐</span>
-        <strong>World Wide Web</strong>Browse all research topics (History, Security, Mobile-First, Middle-East Stats).
-      </a>
-    </li>
 
-    <li>
-      <a href="extraresearch.html">
-        <span class="topic-icon">🧩</span>
-        <strong>Extra Researches</strong>Explore additional articles on Web Standards     .
-      </a>
-    </li>
+  <section class="projects-section">
+  <h2>Projects</h2>
+  <p>Explore both versions of my web research project below:</p>
 
-    <li>
-      <a href="../ar/arabic-article.html" lang="ar" dir="rtl">
-        <span class="topic-icon">🎤</span>
-        <strong>فيروز</strong><p>مقال عربي عن فيروز، جارة القمر وصوت لبنان الخالد، التي جمعت القلوب بصوتها العابر للزمن.</p>
+  <div class="projects-container">
+    <div class="project-card html-version">
+      <h3>Project 1 — HTML-Only Version</h3>
+      <p>Original unstyled pages built using pure HTML only.</p>
+      <a href="no-css/index.html" class="project-btn">Enter HTML-Only</a>
+    </div>
 
-      </a>
-    </li>
-  </ul>
-
-</main>
+    <div class="project-card css-version">
+      <h3>Project 2 — CSS-Styled Version</h3>
+      <p>Updated version with modern responsive design using CSS.</p>
+      <a href="css/index.html" class="project-btn">Enter CSS-Styled</a>
+    </div>
+  </div>
+</section>
 
 
-<footer class="site-footer">
+<section class="disclaimer">
+  <div class="disclaimer-icon">⚠</div>
+  <div class="disclaimer-text">
+    <strong>DISCLAIMER :</strong>
+  This is created solely for educational purposes as part of a web programming course.
+  All information presented on this site are not intended for commercial uses and their sources are listed on the <a href="css/references.html">references page.
+  </div>
+</section>
+
+  <footer class="site-footer">
     <div class="container footer-inner">
-      <small>© 2025 GIN446 · By Madeleine Farah · Last Updated: 15-10-2025</small>
+      <small>© 2025 GIN446 · By Madeleine Farah · Last Updated: 10-10-2025</small>
     </div>
   </footer>
 </body>
